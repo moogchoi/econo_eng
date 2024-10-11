@@ -152,7 +152,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px; 
+            margin-bottom: 20px;
         }
 
         .carousel-container {
@@ -172,7 +172,7 @@
 
         .carousel-track li {
             flex: 0 0 200px;
-            display: flex; 
+            display: flex;
             justify-content: center;
             align-items: center;
             margin: 10px;
@@ -217,8 +217,6 @@
             text-align: center;
             padding: 50px 20px;
             background-color: #fff;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            max-width: 1500px;
             margin: 40px auto;
             border-radius: 12px;
         }
@@ -243,7 +241,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px; 
+            margin-bottom: 20px;
         }
 
         .clients-section .clients-logos {
@@ -252,7 +250,6 @@
             position: relative;
             margin-top: 50px;
             width: 100%;
-            max-width: 1300px;
         }
 
         .clients-section .carousel-track {
@@ -510,7 +507,7 @@
             <div class="clients-logos">
                 <div class="carousel-container">
                     <ul class="carousel-track" id="carouselTrack3">
-                        
+
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/accessbio.png' alt="Access Bio"></li>
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/1.png' alt="Bank of Korea"></li>
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/celltrion.png' alt="Celltrion"></li>
@@ -546,22 +543,24 @@
         document.getElementById('nextBtn3').addEventListener('click', () => {
             if (currentSlide3 < totalSlides3 - 1) {
                 currentSlide3++;
-                carouselTrack3.style.transform = `translateX(-${currentSlide3 * 160}px)`;
+            } else {
+                currentSlide3 = 0;
             }
+            carouselTrack3.style.transform = `translateX(-${currentSlide3 * 160}px)`;
         });
 
         document.getElementById('prevBtn3').addEventListener('click', () => {
             if (currentSlide3 > 0) {
                 currentSlide3--;
-                carouselTrack3.style.transform = `translateX(-${currentSlide3 * 160}px)`;
+            } else {
+                currentSlide3 = totalSlides3 - 1;
             }
+            carouselTrack3.style.transform = `translateX(-${currentSlide3 * 160}px)`;
         });
 
         setInterval(() => {
-            nextBtn3.click();
+            document.getElementById('nextBtn3').click();
         }, 3000);
-
-
     </script>
 
 </body>
