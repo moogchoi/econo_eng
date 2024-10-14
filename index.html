@@ -112,7 +112,7 @@
             position: relative;
             width: 100%;
             font-family: 'Roboto', sans-serif;
-            color: black;
+            color: #0171ba;
             padding: 20px;
             box-sizing: border-box;
             z-index: 1;
@@ -126,25 +126,26 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url(https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/Images/bg2.jpg);
+            background-image: url(https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/Images/bg4.jpg);
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
-            filter: brightness(80%);
+            filter: brightness(50%);
             z-index: -1;
-            opacity: 0.6;
         }
 
         .partners-section .title {
             text-align: center;
             margin: 0 auto;
-            max-width: 700px;
+            max-width: 1100px;
             margin-top: 70px;
         }
 
         .partners-section h1 {
-            font-size: 3rem;
+            font-size: 45px;
             margin-bottom: 10px;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
 
         /* Carousel Container */
@@ -168,6 +169,7 @@
             align-items: center;
             list-style-type: none;
             transition: transform 0.5s ease-in-out;
+            
         }
 
         .carousel-track li {
@@ -177,6 +179,8 @@
             align-items: center;
             margin: 10px;
             height: 150px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.6);
         }
 
         .carousel-track img {
@@ -184,6 +188,7 @@
             height: auto;
             object-fit: contain;
             transition: transform 0.3s ease;
+            
         }
 
         .carousel-track img:hover {
@@ -217,22 +222,22 @@
             text-align: center;
             padding: 50px 20px;
             background-color: #fff;
-            margin: 40px auto;
+            margin: 30px auto;
             border-radius: 12px;
         }
 
         .clients-section h2 {
             font-size: 36px;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             color: #2c3e50;
             text-transform: uppercase;
             letter-spacing: 1.5px;
         }
 
         .clients-section h1 {
-            font-size: 22px;
-            font-weight: 400;
+            font-size: 28px;
+            font-weight: 500;
             margin-bottom: 30px;
             color: #34495e;
         }
@@ -248,7 +253,7 @@
             display: flex;
             overflow: hidden;
             position: relative;
-            margin-top: 50px;
+            margin-top: 20px;
             width: 100%;
         }
 
@@ -309,64 +314,64 @@
 <body>
 
     <!-- Section 1: Insurance Services -->
-    <section class="insurance-services">
-        <div class="container">
-            <div class="card card-wide">
-                <h2>Industry</h2>
-                <ul>
-                    <li><a href="https://econoagency.com/financial-services">Financial Services</a></li>
-                    <li><a href="https://econoagency.com/wholesale-%2F-distributor">Wholesales & Distributor</a></li>
-                    <li><a href="https://econoagency.com/restaurant">Restaurant</a></li>
-                    <li><a href="https://econoagency.com/real-estate-1">Real Estate</a></li>
-                    <li><a href="https://econoagency.com/trucking">Trucking</a></li>
-                    <li><a href="https://econoagency.com/contractors">Contractors</a></li>
-                    <li><a href="https://econoagency.com/life-sciences">Life Sciences</a></li>
-                    <li><a href="https://econoagency.com/manufacturing">Manufacturing</a></li>
-                    <li><a href="https://econoagency.com/retail">Retail</a></li>
-                    <li><a href="https://econoagency.com/religious-organization">Religious Organization</a></li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Business</h2>
-                <ul>
-                    <li><a href="https://econoagency.com/commercial-property-1">Commercial Property</a></li>
-                    <li><a href="https://econoagency.com/general-liability-1">General Liability</a></li>
-                    <li><a href="https://econoagency.com/workers-compensation-1">Workers' Compensation</a></li>
-                    <li><a href="https://econoagency.com/credit-risk-1">Credit Risk</a></li>
-                    <li><a href="https://econoagency.com/management-liability-1">Management Liability</a></li>
-                    <li><a href="https://econoagency.com/flood">Flood</a></li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Personal</h2>
-                <ul>
-                    <li><a href="https://econoagency.com/home">Home Insurance</a></li>
-                    <li><a href="https://econoagency.com/auto">Auto Insurance</a></li>
-                    <li><a href="https://econoagency.com/umbrella-1">Umbrella Insurance</a></li>
-                    <li><a href="#">Travel Insurance</a></li>
-                    <li><a href="#">Valuables Insurance</a></li>
-                    <li><a href="#">Life Insurance</a></li>
-                    <li><a href="#">Disability Insurance</a></li>
-                    <li><a href="#">Long Term Care Insurance</a></li>
-                    <li><a href="#">Retirement Annuity Insurance</a></li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Employee Benefits</h2>
-                <ul>
-                    <li><a href="https://econoagency.com/medical-benefits">Medical Benefits</a></li>
-                    <li><a href="https://econoagency.com/global-plans">Global Plans</a></li>
-                    <li><a href="https://econoagency.com/life-ad%26d">Life Accidental Death & Dismemberment</a></li>
-                    <li><a href="https://econoagency.com/short-%2F-long-term">Short / Long Term Disability</a></li>
-                    <li><a href="https://econoagency.com/additional-benefits">Additional Group Benefits</a></li>
-                    <li><a href="https://econoagency.com/employee-benefits">Overseas Missionary Insurance</a></li>
-                </ul>
-            </div>
+<section class="insurance-services">
+    <div class="container">
+        <div class="card card-wide">
+            <h2>Industry</h2>
+            <ul>
+                <li><a href="https://econoagency.com/financial-services">Financial Services</a></li>
+                <li><a href="https://econoagency.com/wholesale-%2F-distributor">Wholesales & Distributor</a></li>
+                <li><a href="https://econoagency.com/restaurant">Restaurant</a></li>
+                <li><a href="https://econoagency.com/real-estate-1">Real Estate</a></li>
+                <li><a href="https://econoagency.com/trucking">Trucking</a></li>
+                <li><a href="https://econoagency.com/contractors">Contractors</a></li>
+                <li><a href="https://econoagency.com/life-sciences">Life Sciences</a></li>
+                <li><a href="https://econoagency.com/manufacturing">Manufacturing</a></li>
+                <li><a href="https://econoagency.com/retail">Retail</a></li>
+                <li><a href="https://econoagency.com/religious-organization">Religious Organization</a></li>
+            </ul>
         </div>
-    </section>
+
+        <div class="card">
+            <h2>Business</h2>
+            <ul>
+                <li><a href="https://econoagency.com/commercial-property-1">Commercial Property</a></li>
+                <li><a href="https://econoagency.com/general-liability-1">General Liability</a></li>
+                <li><a href="https://econoagency.com/workers-compensation-1">Workers' Compensation</a></li>
+                <li><a href="https://econoagency.com/credit-risk-1">Credit Risk</a></li>
+                <li><a href="https://econoagency.com/management-liability-1">Management Liability</a></li>
+                <li><a href="https://econoagency.com/flood">Flood</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Personal</h2>
+            <ul>
+                <li><a href="https://econoagency.com/home">Home Insurance</a></li>
+                <li><a href="https://econoagency.com/auto">Auto Insurance</a></li>
+                <li><a href="https://econoagency.com/umbrella-1">Umbrella Insurance</a></li>
+                <li><a href="#">Travel Insurance</a></li>
+                <li><a href="#">Valuables Insurance</a></li>
+                <li><a href="#">Life Insurance</a></li>
+                <li><a href="#">Disability Insurance</a></li>
+                <li><a href="#">Long Term Care Insurance</a></li>
+                <li><a href="#">Retirement Annuity Insurance</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Employee Benefits</h2>
+            <ul>
+                <li><a href="https://econoagency.com/medical-benefits">Medical Benefits</a></li>
+                <li><a href="https://econoagency.com/global-plans">Global Plans</a></li>
+                <li><a href="https://econoagency.com/life-ad%26d">Life Accidental Death & Dismemberment</a></li>
+                <li><a href="https://econoagency.com/short-%2F-long-term">Short / Long Term Disability</a></li>
+                <li><a href="https://econoagency.com/additional-benefits">Additional Group Benefits</a></li>
+                <li><a href="https://econoagency.com/employee-benefits">Overseas Missionary Insurance</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
 
 <!-- Section 2: Partners -->
 <section class="partners-section">
@@ -381,7 +386,7 @@
             <div class="logos">
                 <div class="carousel-container">
                     <ul class="carousel-track" id="carouselTrack1">
-                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/dbd490459bb78e24e56a360df4b5bf2d6c9b706e/logos/partners/1/aig.svg' alt="AIG"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/d489978a7189331f146d7edd12bb43b776d03c4c/logos/partners/1/aig.svg' alt="AIG"></li>
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/allianz.png' alt="Allianz"></li>
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/amtrust1.png' alt="AmTrust"></li>
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/atradius.png' alt="Atradius"></li>
@@ -420,8 +425,8 @@
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/guardian.png' alt="Guardian"></li>
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/metlife.png' alt="MetLife"></li>
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/mutual.png' alt="Mutual"></li>
-                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/newyorklife.png' alt="New York Life"></li>
-                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/nippon.png' alt="Nippon"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/nylife2.png' alt="New York Life"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/nippon1.png' alt="Nippon"></li>
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/principal.png' alt="Principal"></li>
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/shelterpoint.png' alt="Shelter Point"></li>
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/standardlife.png' alt="Standard Life"></li>
@@ -501,12 +506,13 @@
     <section class="clients-section">
         <h2>Our Clients</h2>
         <h1>Trusted by the Best</h1>
+    
+    <!-- First Carousel Row -->
         <div class="carousel-wrapper">
             <button class="carousel-btn carousel-btn--left" id="prevBtn3">‹</button>
             <div class="clients-logos">
                 <div class="carousel-container">
                     <ul class="carousel-track" id="carouselTrack3">
-
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/accessbio.png' alt="Access Bio"></li>
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/1.png' alt="Bank of Korea"></li>
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/celltrion.png' alt="Celltrion"></li>
@@ -527,14 +533,52 @@
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/11.png' alt="Posco"></li>
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/samyang.png' alt="Samyang"></li>
                         <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/16.png' alt="SK Life Science"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/solum.png' alt="solum"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/vatech.png' alt="vatech"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/woori.png' alt="woori"></li>
                     </ul>
                 </div>
             </div>
             <button class="carousel-btn carousel-btn--right" id="nextBtn3">›</button>
         </div>
+
+        <div class="carousel-wrapper">
+            <button class="carousel-btn carousel-btn--left" id="prevBtn4">‹</button>
+            <div class="clients-logos">
+                <div class="carousel-container">
+                    <ul class="carousel-track" id="carouselTrack4">
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/agrofish.png' alt="Agrofish"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/csrenewables.png' alt="CS Renewables"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/dashingdiva.png' alt="Dashing Diva"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/ecopro.jpg' alt="Eco Pro"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/export.png' alt="Export"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/hitrons.png' alt="Hitrons"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/kb.png' alt="KB"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/kdb.png' alt="KDB"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/keb.png' alt="KEB"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/khf.jpg' alt="KHF"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/kic.jpg' alt="KIC"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/kiswire.jpg' alt="kiswire"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/kocham.png' alt="kocham"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/massdesign.png' alt="mass design"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/maxlite.png' alt="maxlite"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/myvet.png' alt="myvet"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/nonghyup.png' alt="nonghyup"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/nps.jpg' alt="nps"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/f9c89255c24a0f425bcb7653a3395a991c0ce2d8/logos/2/posid.svg' alt="posid"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/qpix.jfif' alt="Qpix"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/sempio.png' alt="sempio"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/shinhan.png' alt="shinhan"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/2/sojo.png' alt="sojo"></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="carousel-btn carousel-btn--right" id="nextBtn4">›</button>
+        </div>
     </section>
 
     <script>
+        // 1st row script
         const carouselTrack3 = document.getElementById('carouselTrack3');
         let currentSlide3 = 0;
         const totalSlides3 = carouselTrack3.children.length;
@@ -559,6 +603,33 @@
 
         setInterval(() => {
             document.getElementById('nextBtn3').click();
+        }, 3000);
+
+        // 2nd row script
+        const carouselTrack4 = document.getElementById('carouselTrack4');
+        let currentSlide4 = 0;
+        const totalSlides4 = carouselTrack4.children.length;
+
+        document.getElementById('nextBtn4').addEventListener('click', () => {
+            if (currentSlide4 < totalSlides4 - 1) {
+                currentSlide4++;
+            } else {
+                currentSlide4 = 0;
+            }
+            carouselTrack4.style.transform = `translateX(-${currentSlide4 * 160}px)`;
+        });
+
+        document.getElementById('prevBtn4').addEventListener('click', () => {
+            if (currentSlide4 > 0) {
+                currentSlide4--;
+            } else {
+                currentSlide4 = totalSlides4 - 1;
+            }
+            carouselTrack4.style.transform = `translateX(-${currentSlide4 * 160}px)`;
+        });
+
+        setInterval(() => {
+            document.getElementById('prevBtn4').click();
         }, 3000);
     </script>
 
