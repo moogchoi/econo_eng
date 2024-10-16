@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        .partners-section {
+            margin: 0;
+            position: relative;
+        }
+
+        .partners-section .container {
+            position: relative;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            color: #0171ba;
+            padding: 20px;
+            box-sizing: border-box;
+            z-index: 1;
+            height: 800px;
+        }
+
+        .partners-section .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/Images/bg4.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            filter: brightness(50%);
+            z-index: -1;
+        }
+
+        .partners-section .title {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 1100px;
+            margin-top: 70px;
+        }
+
+        .partners-section h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Carousel Container */
+        .partners-section .carousel-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .carousel-container {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            margin-top: 50px;
+        }
+
+        /* Carousel Track */
+        .carousel-track {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            transition: transform 0.5s ease-in-out;
+            
+        }
+
+        .carousel-track li {
+            flex: 0 0 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            height: 150px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .carousel-track img {
+            width: 70%;
+            height: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+            
+        }
+
+        .carousel-track img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Buttons */
+        .carousel-btn {
+            margin-top: 90px;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .carousel-btn--left {
+            left: 10px;
+        }
+
+        .carousel-btn--right {
+            right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+  <!-- Section 2: Partners -->
+<section class="partners-section">
+    <div class="container">
+        <div class="title">
+            <h1>We’re proud to partner with the top insurance providers</h1>
+        </div>
+
+        <!-- First Carousel -->
+        <div class="carousel-wrapper">
+            <button class="carousel-btn carousel-btn--left" id="prevBtn1">‹</button>
+            <div class="logos">
+                <div class="carousel-container">
+                    <ul class="carousel-track" id="carouselTrack1">
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/d489978a7189331f146d7edd12bb43b776d03c4c/logos/partners/1/aig.svg' alt="AIG"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/allianz.png' alt="Allianz"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/amtrust1.png' alt="AmTrust"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/atradius.png' alt="Atradius"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/chubb.png' alt="Chubb"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/cna.png' alt="CNA"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/franklin.png' alt="Franklin"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/hanover.png' alt="Hanover"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/harleysville.png' alt="Harleysville"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/hartford.png' alt="Hartford"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/hyundai.png' alt="Hyundai"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/kingstone.png' alt="Kingstone"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/lancer.png' alt="Lancer"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/lloyds.png' alt="Lloyds"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/progressive.png' alt="Progressive"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/selective.png' alt="Selective"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/seneca1.png' alt="Seneca"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/travelers.png' alt="Travelers"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/1/zurich.png' alt="Zurich"></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="carousel-btn carousel-btn--right" id="nextBtn1">›</button>
+        </div>
+
+        <!-- Second Carousel (New Row) -->
+        <div class="carousel-wrapper">
+            <button class="carousel-btn carousel-btn--left" id="prevBtn2">‹</button>
+            <div class="logos">
+                <div class="carousel-container">
+                    <ul class="carousel-track" id="carouselTrack2">
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/aetna.png' alt="aetna"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/aflac.png' alt="Aflac"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/bluecross.png' alt="BlueCross"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/cigna.png' alt="Cigna"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/delta.png' alt="Delta"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/guardian.png' alt="Guardian"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/metlife.png' alt="MetLife"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/mutual.png' alt="Mutual"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/nylife2.png' alt="New York Life"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/nippon1.png' alt="Nippon"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/principal.png' alt="Principal"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/shelterpoint.png' alt="Shelter Point"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/standardlife.png' alt="Standard Life"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/sunlife.png' alt="SunLife"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/united.png' alt="United"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/unum.png' alt="Unum"></li>
+                        <li><img src='https://raw.githubusercontent.com/moogchoi/econo/refs/heads/master/logos/partners/2/vsp.png' alt="VSP"></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="carousel-btn carousel-btn--right" id="nextBtn2">›</button>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    // First Carousel Controls
+    const track1 = document.getElementById('carouselTrack1');
+    const prevBtn1 = document.getElementById('prevBtn1');
+    const nextBtn1 = document.getElementById('nextBtn1');
+
+    let currentIndex1 = 0;
+    const slideWidth1 = track1.querySelector('li').getBoundingClientRect().width;
+
+    nextBtn1.addEventListener('click', () => {
+        currentIndex1++;
+        if (currentIndex1 >= track1.children.length - 3) {
+            currentIndex1 = 0;
+        }
+        track1.style.transform = 'translateX(' + (-slideWidth1 * currentIndex1) + 'px)';
+    });
+
+    prevBtn1.addEventListener('click', () => {
+        currentIndex1--;
+        if (currentIndex1 < 0) {
+            currentIndex1 = track1.children.length - 4;
+        }
+        track1.style.transform = 'translateX(' + (-slideWidth1 * currentIndex1) + 'px)';
+    });
+
+    setInterval(() => {
+        nextBtn1.click();
+    }, 3000);
+
+    // Second Carousel Controls
+    const track2 = document.getElementById('carouselTrack2');
+    const prevBtn2 = document.getElementById('prevBtn2');
+    const nextBtn2 = document.getElementById('nextBtn2');
+
+    let currentIndex2 = 0;
+    const slideWidth2 = track2.querySelector('li').getBoundingClientRect().width;
+
+    nextBtn2.addEventListener('click', () => {
+        currentIndex2++;
+        if (currentIndex2 >= track2.children.length - 3) {
+            currentIndex2 = 0;
+        }
+        track2.style.transform = 'translateX(' + (-slideWidth2 * currentIndex2) + 'px)';
+    });
+
+    prevBtn2.addEventListener('click', () => {
+        currentIndex2--;
+        if (currentIndex2 < 0) {
+            currentIndex2 = track2.children.length - 4;
+        }
+        track2.style.transform = 'translateX(' + (-slideWidth2 * currentIndex2) + 'px)';
+    });
+
+    setInterval(() => {
+        prevBtn2.click();
+    }, 3000);
+</script>
+</body>
+</html>

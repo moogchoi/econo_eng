@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Section 1: Insurance Services */
+        .insurance-services {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff;
+            padding-bottom: 10px;
+            color: #0171ba;
+        }
+
+        .insurance-services .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .insurance-services .card {
+            background-color: #fff;
+            border: 1px solid;
+            border-color: #0171ba;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            min-height: 400px;
+            text-align: center;
+            color: #333;
+        }
+
+        .insurance-services .card h2 {
+            font-size: 24px;
+            color: #0171ba;
+            margin-bottom: 15px;
+        }
+
+        .insurance-services .card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .insurance-services .card ul li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .insurance-services .card ul li a {
+            display: block;
+            padding: 10px;
+            background-color: #0171ba;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            border-color: #fff;
+            transition: border-color 0.3s, color 0.3s;
+        }
+
+        .insurance-services .card ul li a:hover {
+            background-color: #4aadf8;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+
+        .insurance-services .card-wide {
+            grid-column: span 3;
+            padding: 15px;
+            min-height: auto;
+        }
+
+        .insurance-services .card-wide ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5px;
+            justify-content: space-between;
+        }
+
+        .insurance-services .card-wide ul li {
+            width: calc(33% - 20px);
+        }
+
+        @media (max-width: 768px) {
+            .insurance-services .container {
+                grid-template-columns: 1fr;
+            }
+
+            .insurance-services .card-wide ul li {
+                width: 100%;
+            }
+
+            .insurance-services .card,
+            .insurance-services .card-wide {
+                grid-column: span 1;
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+<!-- Section 1: Insurance Services -->
+<section class="insurance-services">
+    <div class="container">
+        <div class="card card-wide">
+            <h2>Industry</h2>
+            <ul>
+                <li><a href="https://econoagency.com/financial-services" target="_top">Financial Services</a></li>
+                <li><a href="https://econoagency.com/wholesale-%2F-distributor" target="_top">Wholesales & Distributor</a></li>
+                <li><a href="https://econoagency.com/restaurant" target="_top">Restaurant</a></li>
+                <li><a href="https://econoagency.com/real-estate-1" target="_top">Real Estate</a></li>
+                <li><a href="https://econoagency.com/trucking" target="_top">Trucking</a></li>
+                <li><a href="https://econoagency.com/contractors" target="_top">Contractors</a></li>
+                <li><a href="https://econoagency.com/life-sciences" target="_top">Life Sciences</a></li>
+                <li><a href="https://econoagency.com/manufacturing" target="_top">Manufacturing</a></li>
+                <li><a href="https://econoagency.com/retail" target="_top">Retail</a></li>
+                <li><a href="https://econoagency.com/religious-organization" target="_top">Religious Organization</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Business</h2>
+            <ul>
+                <li><a href="https://econoagency.com/commercial-property-1" target="_top">Commercial Property</a></li>
+                <li><a href="https://econoagency.com/general-liability-1" target="_top">General Liability</a></li>
+                <li><a href="https://econoagency.com/workers-compensation-1" target="_top">Workers' Compensation</a></li>
+                <li><a href="https://econoagency.com/credit-risk-1" target="_top">Credit Risk</a></li>
+                <li><a href="https://econoagency.com/management-liability-1" target="_top">Management Liability</a></li>
+                <li><a href="https://econoagency.com/flood" target="_top">Flood</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Personal</h2>
+            <ul>
+                <li><a href="https://econoagency.com/home" target="_top">Home Insurance</a></li>
+                <li><a href="https://econoagency.com/auto" target="_top">Auto Insurance</a></li>
+                <li><a href="https://econoagency.com/umbrella-1" target="_top">Umbrella Insurance</a></li>
+                <li><a href="https://www.geobluetravelinsurance.com/index.cfm?link_id=325122&header=y&footer=y&personalized=y" target="_top">Travel Insurance</a></li>
+                <li><a href="#" target="_top">Valuables Insurance</a></li>
+                <li><a href="#" target="_top">Life Insurance</a></li>
+                <li><a href="#" target="_top">Disability Insurance</a></li>
+                <li><a href="#" target="_top">Long Term Care Insurance</a></li>
+                <li><a href="#" target="_top">Retirement Annuity Insurance</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Employee Benefits</h2>
+            <ul>
+                <li><a href="https://econoagency.com/medical-benefits" target="_top">Medical Benefits</a></li>
+                <li><a href="https://econoagency.com/global-plans" target="_top">Global Plans</a></li>
+                <li><a href="https://econoagency.com/life-ad%26d" target="_top">Life Accidental Death & Dismemberment</a></li>
+                <li><a href="https://econoagency.com/short-%2F-long-term" target="_top">Short / Long Term Disability</a></li>
+                <li><a href="https://econoagency.com/additional-benefits" target="_top">Additional Group Benefits</a></li>
+                <li><a href="https://www.geobluetravelinsurance.com/index.cfm?link_id=325122&header=y&footer=y&personalized=y" target="_top">Overseas Missionary Insurance</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
